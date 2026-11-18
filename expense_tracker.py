@@ -1,21 +1,24 @@
 
 expenses = []
 
-def add_expense():
-    pass
 
-def show_expenses():
-    pass
-
-def show_total():
-    pass
 
 def main():
     while True:
         print("\n===== SUIVI DES DÉPENSES =====")
         print("1. Ajouter une dépense")
         print("2. Afficher les dépenses")
-        print("3. Afficher le total")
+        print("3. Afdef show_expenses():
+    if not expenses:
+        print("Aucune dépense enregistrée.")
+        return
+    for number, expense in enumerate(expenses, start=1):
+        print(f"{number}. {expense['description']} - {expense['amount']:.2f}")
+
+def show_total():
+    total = sum(item['amount'] for item in expenses)
+    print(f"Total : {total:.2f}")
+ficher le total")
         print("4. Quitter")
 
         choice = input("Votre choix : ")
